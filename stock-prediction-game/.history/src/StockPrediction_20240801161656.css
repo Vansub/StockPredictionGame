@@ -1,0 +1,105 @@
+.stock-prediction {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.total-score {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  max-width: 45%; /* Adjust this value to control the width of each panel */
+}
+
+.stock-input input, .prediction-form input, .prediction-form select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.stock-list {
+  margin-top: 10px;
+  max-height: 300px; /* Adjust this value to control the height of the table */
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px; /* Reduce font size for table content */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-size: 13px; /* Slightly larger font for table headers */
+}
+
+.chart-container {
+  margin-top: 20px;
+  width: 500px; /* Adjust this value to make the chart smaller */
+  height: 250px; /* Adjust this value to make the chart smaller */
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Add some responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    max-width: 100%;
+  }
+
+  .chart-container {
+    margin-top: 20px;
+    width: 600px; /* Back to the original width */
+    height: 300px; /* Back to the original height */
+    margin: auto;
+    overflow: hidden;
+  }
+}

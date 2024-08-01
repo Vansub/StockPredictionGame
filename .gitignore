@@ -1,0 +1,38 @@
+# Python
+.env
+*.pyc
+__pycache__/
+venv/
+env/
+
+# Spring Boot
+stock_predictionGame/src/main/resources/application.properties
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
