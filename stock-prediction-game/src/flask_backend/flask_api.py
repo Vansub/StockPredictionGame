@@ -13,7 +13,7 @@ from mysql.connector import Error
 db_config = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'dhushdiya2024',
+    'password': '',
     'database': 'stocks'
 }
 
@@ -33,7 +33,7 @@ CORS(app)
 
 def load_model(ticker):
     """Load the trained model for a given stock ticker."""
-    model_directory = r'C:\Users\Vani\Desktop\AD project- Portfolio Visualiser\StockPredictionGame\stock-prediction-game\src\flask_backend\models'
+    model_directory = r'{your folder for model}'
     file_path = os.path.join(model_directory, f'{ticker}_model.pkl')
     print(f"Attempting to load model from {file_path}...")
     if not os.path.isfile(file_path):
